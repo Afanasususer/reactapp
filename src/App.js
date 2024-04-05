@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>version2  branch ok</h1>
+        <h1>version2  the new branch</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
