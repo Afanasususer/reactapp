@@ -182,3 +182,8 @@ footer{
 .show-when-mobile {
   display: none;
 }
+
+/* react  */
+.err{
+  color: black;
+}
