@@ -7,7 +7,7 @@ export default function Css() {
     <div>
       <>
       <Header></Header>
-      <Main pageName ="JavaScript" Disinger = "abdelouahab"/> 
+      <Main pageName ="css" Disinger = "abdelouahab"/> 
         <Footer devName="abdelouahab"/>
       </>
     </div>

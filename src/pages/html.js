@@ -7,7 +7,7 @@ export default function Html() {
     <div>
       <>
         <Header></Header>
-        <Main pageName ="JavaScript" Disinger="Reem"/> 
+        <Main pageName ="html" Disinger="Reem"/>
         <Footer devName="Abdelouahab"/>
       </>
     </div>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header></Header>
-      <Main pageName ="JavaScript" Disinger = "malik"/> 
+      <Main pageName ="home" Disinger = "malik"/> 
       <Footer devName="abdelouahab"/>
     </>
   );
