@@ -1,14 +1,10 @@
-
-
-
-
-
-
-export default function Footer() {
+export default function Footer({devName}) {
   return (
-    <><footer>
-    Designed and developed by Courses4Arab.com
-    <span>🧡</span>
-  </footer></>
-  )
+    <>
+      <footer>
+        Designed and developed by {devName}
+        <span>🧡</span>
+      </footer>
+    </>
+  );
 }

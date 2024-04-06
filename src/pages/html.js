@@ -1,14 +1,14 @@
 import Header from '../component/hearder'
 import Footer from '../component/footer'
-
+import Main from '../component/Main'
 
 export default function Html() {
   return (
     <div>
       <>
         <Header></Header>
-        <main>Html</main>
-        <Footer></Footer>
+        <Main pageName ="JavaScript" Disinger="Reem"/> 
+        <Footer devName="Abdelouahab"/>
       </>
     </div>
   );
