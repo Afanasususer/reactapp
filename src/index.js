@@ -10,6 +10,7 @@ import Css from "./pages/css";
 import JavaScript from "./pages/javaScript";
 // f smiya dyal import tedar tsemi li bghiti lmohim hiya li ghadi tdem biha f lfile kolo wdarouri ykon awel harf capital, w mn l2a7ssen semi b nefss smiya dyal lfunction li kayna f lfile li nta baghi thadar hit katweli dir auto import lrassha fach katkteb smiya f dak f dak element so mn l2a7ssen n5edmo b smiyat dyal lfunction dyalna
 // import './mobile-screen.css'
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>
 );

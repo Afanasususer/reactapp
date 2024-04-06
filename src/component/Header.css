@@ -3,9 +3,11 @@
 }
 .header .hide-when-mobile{
   display: flex;
-  background-color: red;
+  background-color: teal;
   justify-content: space-around;
 }
 
-
+.header .numb{
+  color : navy
+}
 

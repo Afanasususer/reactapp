@@ -1,7 +1,11 @@
 .foot footer{
-  background-color: #1b1b1b;
+  background-color: teal;
 /* color: blue; */
   padding: 20px 0;
   text-align: center;
   font-size: 18px;
+}
+
+.foot .color {
+  color : red
 }

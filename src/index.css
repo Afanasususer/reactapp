@@ -98,19 +98,19 @@ h1 {
 
 .flex {
   display: flex;
-  background-color: red;
+  background-color: teal;
 }
 
 .main-list {
   padding: 20px;
   font-size: 19px;
   position: relative;
-  background-color: red;
+  background-color: teal;
 }
 
 .main-link {
   padding: 8px 15px;
-  background-color: red;
+  background-color: teal;
 }
 
 .main-link:hover {
@@ -204,5 +204,10 @@ h1 {
 
 
 
+/* src >> pages >> home page */
 
-
+/* we give the void parent a name div and class home to be more specific */
+/* .home : mean that we are working only the elements inside home.js */
+/* .home .parag{
+color: pink;
+} */

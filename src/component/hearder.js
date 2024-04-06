@@ -6,7 +6,7 @@ export default function Hearder() {
     <div className="header">
       <header className="hide-when-mobile">
         {/* had l3onwan redo ilnk dyal lhome */}
-        <Link to="/"><h1>Courses 4 Arab</h1></Link>
+        <Link to="/"><h1>Coding <span className="numb">4</span> Life</h1> </Link>
         
         <ul className="flex">
           <li className="main-list">
