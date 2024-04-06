@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/home'
-import ErrorPage from './pages/ErrorPage'
+import Home from "./pages/home";
+import ErrorPage from "./pages/ErrorPage";
 import Html from "./pages/html";
 import Css from "./pages/css";
 import JavaScript from "./pages/javaScript";
@@ -12,38 +12,34 @@ import JavaScript from "./pages/javaScript";
 // import './mobile-screen.css'
 
 const router = createBrowserRouter([
-
   {
     path: "/",
-    element: <Home/>,
-    errorElement: <ErrorPage />
+    element: <Home />,
+    errorElement: <ErrorPage />,
     // errorElement: <h1>this page not available</h1>
   },
 
   {
     path: "/html",
-    element: <Html/>,
-    errorElement: <ErrorPage />
+    element: <Html />,
+    errorElement: <ErrorPage />,
     // errorElement: <h1>this page not available</h1>
   },
 
   {
     path: "/css",
-    element: <Css/>,
-    errorElement: <ErrorPage />
+    element: <Css />,
+    errorElement: <ErrorPage />,
     // errorElement: <h1>this page not available</h1>
   },
 
   {
     path: "/javascript",
-    element: <JavaScript/>,
-    errorElement: <ErrorPage />
+    element: <JavaScript />,
+    errorElement: <ErrorPage />,
     // errorElement: <h1>this page not available</h1>
   },
-
 ]);
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

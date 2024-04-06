@@ -1,7 +1,7 @@
-header {
+.header header {
   background-color: #1b1b1b;
 }
-.hide-when-mobile{
+.header .hide-when-mobile{
   display: flex;
   background-color: red;
   justify-content: space-around;

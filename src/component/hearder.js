@@ -3,7 +3,7 @@ import './Header.css'
 
 export default function Hearder() {
   return (
-    <>
+    <div className="header">
       <header className="hide-when-mobile">
         {/* had l3onwan redo ilnk dyal lhome */}
         <Link to="/"><h1>Courses 4 Arab</h1></Link>
@@ -65,6 +65,6 @@ export default function Hearder() {
         </ul>
       </header>
   
-    </>
+    </div>
   );
 }
