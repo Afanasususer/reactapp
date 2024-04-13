@@ -96,28 +96,12 @@ h1 {
   color : black;
 }
 
-.flex {
-  display: flex;
-  background-color: teal;
-}
 
-.main-list {
-  padding: 20px;
-  font-size: 19px;
-  position: relative;
-  background-color: teal;
-}
 
-.main-link {
-  padding: 8px 15px;
-  background-color: teal;
-}
 
-.main-link:hover {
-  color: cyan;
-  box-shadow: 0 0 5px cyan;
-  border-radius: 5px;
-}
+
+
+
 
 /* =======================================
    1.1 sub HTML + css + JavaScript
@@ -211,3 +195,9 @@ h1 {
 /* .home .parag{
 color: pink;
 } */
+
+
+
+/* ==================
+    dark & light mode
+===================== */

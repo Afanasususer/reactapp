@@ -10,6 +10,7 @@ export default function Home() {
         <Helmet>
           <title>Home Page</title>
         </Helmet>
+        
         <Header></Header>
         <Main pageName="home" Disinger="malik" />
         <Footer devName="abdelouahab" />

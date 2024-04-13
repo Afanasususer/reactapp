@@ -1,13 +1,86 @@
-.header header {
-  background-color: #1b1b1b;
-}
-.header .hide-when-mobile{
+
+.header .hide-when-mobile {
   display: flex;
   background-color: teal;
   justify-content: space-around;
+  align-items: center;
 }
 
-.header .numb{
-  color : navy
+.flex {
+  display: flex;
+  background-color: teal;
+  align-items: center;
 }
 
+.header .main-list {
+  padding: 20px;
+  font-size: 19px;
+  position: relative;
+  background-color: teal;
+}
+
+.header .main-link {
+  padding: 8px 15px;
+  background-color: teal;
+}
+.header .numb {
+  color: #dee2e6;
+}
+.main-link:hover {
+  color: cyan;
+  box-shadow: 0 0 5px rgb(113, 162, 162);
+  border-radius: 5px;
+}
+
+/* ===================================
+ head >> dark and light mode button
+ ==================================  */
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #d9c7c7;
+  background: linear-gradient(90deg, #0066cc 0%, #000000 100%);
+  padding: 10px 30px;
+  border: solid #9da4abbf 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 889ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  transition: 889ms;
+  /* padding: 10px 49px; */
+  transform: translateY(-0px);
+  background: linear-gradient(90deg, #0066cc 0%, #000000 100%);
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
+
+.dark .header .main-link {
+  padding: 8px 15px;
+  background-color: #252422;
+}
+.dark .header .main-list {
+  padding: 20px;
+  font-size: 19px;
+  position: relative;
+  background-color: #252422;
+}
+.dark .header .flex {
+  display: flex;
+  background-color: #252422;
+  align-items: center;
+}
+.dark .header .hide-when-mobile {
+  display: flex;
+  background-color: #252422;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -28,7 +28,7 @@ export default function Css() {
           
           </Helmet>
           <Header></Header>
-          <p className="parag">this style only for css page using helmet style</p>
+          {/* <p className="parag">this style only for css page using helmet style</p> */}
           <Main pageName="css" Disinger="abdelouahab" />
           <Footer devName="abdelouahab" />
         </HelmetProvider>

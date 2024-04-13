@@ -9,3 +9,6 @@
 .foot .color {
   color : red
 }
+.dark .foot footer{
+  background-color: #252422;
+}

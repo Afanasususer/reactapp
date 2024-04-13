@@ -1,13 +1,27 @@
-import { NavLink,Link } from "react-router-dom";
-import './Header.css'
+import {useContext} from "react";
+ import ThemeContext from "../context/Datacontext";
+
+import { NavLink, Link } from "react-router-dom";
+import "./Header.css";
 
 export default function Hearder() {
+  const {name, clss, changeName, changeTheme} = useContext(ThemeContext);
+
+
+
+
+
   return (
-    <div className="header">
+    // <div className= "header">
+    <div className= "header">
       <header className="hide-when-mobile">
         {/* had l3onwan redo ilnk dyal lhome */}
-        <Link to="/"><h1>Coding <span className="numb">4</span> Life</h1> </Link>
-        
+        <Link to="/">
+          <h1>
+            Coding <span className="numb">4</span> Life
+          </h1>
+        </Link>
+
         <ul className="flex">
           <li className="main-list">
             <NavLink className="main-link" to="/html">
@@ -62,9 +76,14 @@ export default function Hearder() {
               </li>
             </ul> */}
           </li>
+
+          {/* Dark & light mode button  */}
+          <li className="main-list">
+            <button  class="btn" onClick={() => { changeName( name === "Dark" ? "Light" : "Dark"  ); changeTheme( clss === "light" ? "dark" : "light" )  }}>{name}</button>
+          </li>
+          {/* end of dark and light mode codes */}
         </ul>
       </header>
-  
     </div>
   );
 }
