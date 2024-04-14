@@ -49,7 +49,7 @@ function App() {
 
 
   return (
-  <div className={`${clss}`}>
+<div className={`${clss}`}>
 <RouterProvider router={router} />  
 </div>
 )

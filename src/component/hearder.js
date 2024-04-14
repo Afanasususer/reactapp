@@ -87,3 +87,5 @@ export default function Hearder() {
     </div>
   );
 }
+
+// 3la m afhamt houa anah fch kandir send data l local storage hna f onclick kisendiha qbel ma ybedlha, soit dert send f start or end
