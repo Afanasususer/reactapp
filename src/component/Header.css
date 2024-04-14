@@ -84,6 +84,10 @@
   justify-content: space-around;
   align-items: center;
 }
+
+/* =========================
+ for dark & light mode icons
+ ==========================*/ 
 .light .fa-sun{
   display: none;
 }
@@ -91,8 +95,21 @@
   display: none;
 }
 .fa-sun{
-  color: goldenrod;
+  color: #ee9b00;
+  /* transition: all .1s; */
+  padding:4px;
 }
 .fa-moon{
   color: #ee9b00;
+  /* transition: all .1s; */
+  padding:4px;
 }
+
+/* .fa-sun:hover { 
+  background-color: #fff;
+  border-radius: 50%;
+} */
+/* .fa-moon:hover { 
+  background-color: #242424;
+  border-radius: 60%;
+} */
