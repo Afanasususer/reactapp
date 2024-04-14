@@ -1,18 +1,16 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
 
 /* ===============
    0. global style
@@ -43,31 +41,10 @@ html {
   box-sizing: inherit;
 }
 
-
-
 h1 {
   padding: 20px;
   font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* =============
  table of contents
@@ -88,20 +65,12 @@ h1 {
    0. global style
 ================ */
 
-
 /* ===============
    1.  ul class .flex
 ================ */
-.hi{
-  color : black;
+.hi {
+  color: black;
 }
-
-
-
-
-
-
-
 
 /* =======================================
    1.1 sub HTML + css + JavaScript
@@ -167,26 +136,18 @@ h1 {
   display: block;
 }
 
-
 /* ==================
     2. main & footer
 ===================== */
-
-
-
 
 /* ==================
     3. header of mobile
 ===================== */
 
-
 /* react  */
-.err{
+.err {
   color: black;
 }
-
-
-
 
 /* src >> pages >> home page */
 
@@ -196,8 +157,76 @@ h1 {
 color: pink;
 } */
 
+/* sign in/up/Home */
+.Mmain {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Mmain > p {
+  color: black;
+  font-weight: bolder;
+  font-size: 25px;
 
+  justify-content: center;
+  margin-top: 70px;
+}
+.dark .Mmain {
+  color: wheat;
+  background-color: #403d39;
+}
+.dark .Mmain p {
+  color: rgb(249, 226, 226);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  /* border: 2px solid red; */
+  width: 40%;
+}
+input {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border-radius: 10ex;
+  outline: none;
+  border: none;
+  color: black;
+  width: 100%;
+}
+.Mmain button {
+  border: none;
+  color: black;
+  background-color: teal;
+  padding: 8px 12px;
+  font-weight: bolder;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+}
 
-/* ==================
-    dark & light mode
-===================== */
+form .Tosignup {
+  font-size: 15px;
+  color: white;
+  margin-top: 8px;
+}
+.light form .Tosignup {
+  font-size: 15px;
+  color: #242424;
+  margin-top: 8px;
+
+}
+form a {
+  text-decoration: underline;
+  color: floralwhite;
+  font-weight: bolder;
+}
+.light form a {
+  text-decoration: underline;
+  color: black;
+  font-weight: bolder;
+}

@@ -17,7 +17,7 @@ export default function Html() {
         <HelmetProvider>
           <Helmet>
             <title>Html Page</title>
-          </Helmet>
+          </Helmet> 
           <Header></Header>
           <Main pageName="html" Disinger="Reem" />
           <Footer devName="Abdelouahab" />

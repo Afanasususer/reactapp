@@ -16,7 +16,7 @@ export default function Hearder() {
     <div className= "header">
       <header className="hide-when-mobile">
         {/* had l3onwan redo ilnk dyal lhome */}
-        <Link to="/">
+        <Link to="/home">
           <h1>
             Coding <span className="numb">4</span> Life
           </h1>

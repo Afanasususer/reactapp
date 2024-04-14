@@ -6,6 +6,9 @@ import Home from "./pages/home";
 import ErrorPage from "./pages/ErrorPage";
 import Html from "./pages/html";
 import Css from "./pages/css";
+import Mhome from "./pages/M_home"
+import SignUp from "./pages/SignUp"
+import SignIn from "./pages/SignIn"
 import JavaScript from "./pages/javaScript";
 
 function App() {
@@ -14,6 +17,24 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
+      element: <Mhome />,
+      errorElement: <ErrorPage />,
+      // errorElement: <h1>this page not available</h1>
+    },
+    {
+      path: "/SignIn",
+      element: <SignIn />,
+      errorElement: <ErrorPage />,
+      // errorElement: <h1>this page not available</h1>
+    },
+    {
+      path: "/SignUp",
+      element: <SignUp />,
+      errorElement: <ErrorPage />,
+      // errorElement: <h1>this page not available</h1>
+    },
+    {
+      path: "/home",
       element: <Home />,
       errorElement: <ErrorPage />,
       // errorElement: <h1>this page not available</h1>
