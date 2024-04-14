@@ -84,3 +84,15 @@
   justify-content: space-around;
   align-items: center;
 }
+.light .fa-sun{
+  display: none;
+}
+.dark .fa-moon{
+  display: none;
+}
+.fa-sun{
+  color: goldenrod;
+}
+.fa-moon{
+  color: #ee9b00;
+}

@@ -2,7 +2,7 @@ import { createContext, useReducer } from "react";
 const ThemeContexttt = createContext();
 
 // 
-const initialData = { clss : localStorage.getItem("theme") == null ? "light" : localStorage.getItem("theme") , name : "Dark"};
+const initialData = { clss : localStorage.getItem("theme") == null ? "light" : localStorage.getItem("theme") , name : <i className="fa-solid fa-sun"></i>};
 
 const reducer = (state, action) => {
   switch (action.type) {

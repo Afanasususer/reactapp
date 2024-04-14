@@ -79,7 +79,10 @@ export default function Hearder() {
 
           {/* Dark & light mode button  */}
           <li className="main-list">
-            <button  class="btn" onClick={() => { changeName( name === "Dark" ? "Light" : "Dark"  ); changeTheme( clss === "light" ? "dark" : "light" )  }}>{name}</button>
+            <div onClick={() => { changeTheme( clss === "light" ? "dark" : "light" )  }}> 
+              <i className="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+            </div>
           </li>
           {/* end of dark and light mode codes */}
         </ul>
