@@ -1,19 +1,21 @@
-import {useContext} from "react";
- import ThemeContext from "../context/Datacontext";
+import { useContext } from "react";
+import ThemeContext from "../context/Datacontext";
 
 import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
 
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../firebase/config";
+import {signOut } from "firebase/auth";
+
 export default function Hearder() {
-  const {name, clss, changeName, changeTheme} = useContext(ThemeContext);
-
-
-
-
+  const [user, loading, error] = useAuthState(auth);
+  const { clss, changeTheme } = useContext(ThemeContext);
 
   return (
     // <div className= "header">
-    <div className= "header">
+    <div className="header">
+
       <header className="hide-when-mobile">
         {/* had l3onwan redo ilnk dyal lhome */}
         <Link to="/home">
@@ -23,6 +25,46 @@ export default function Hearder() {
         </Link>
 
         <ul className="flex">
+          {user && 
+            <li onClick={() => { signOut(auth).then(() => {
+              // Sign-out successful.
+            }).catch((error) => {
+              // An error happened.
+            }); }} className="main-list">
+              <NavLink className="main-link" to="/SignIn">
+                Log out
+              </NavLink>
+            </li>
+          }
+
+          {!user && (
+            <>
+              {/* det parent 5awi bch ma t5assarlich flexbox dyal lheader */}
+              <li
+                onClick={() => {
+                  signOut(auth)
+                    .then(() => {
+                      // Sign-out successful.
+                    })
+                    .catch((error) => {
+                      // An error happened.
+                    });
+                }}
+                className="main-list"
+              >
+                <NavLink className="main-link" to="/SignIn">
+                  Sign In
+                </NavLink>
+              </li>
+
+              <li className="main-list">
+                <NavLink className="main-link" to="/SignUp">
+                  Sign Up
+                </NavLink>
+              </li>
+            </>
+          )}
+
           <li className="main-list">
             <NavLink className="main-link" to="/html">
               HTML
@@ -79,7 +121,11 @@ export default function Hearder() {
 
           {/* Dark & light mode button  */}
           <li className="main-list">
-            <div onClick={() => { changeTheme( clss === "light" ? "dark" : "light" )  }}> 
+            <div
+              onClick={() => {
+                changeTheme(clss === "light" ? "dark" : "light");
+              }}
+            >
               <i className="fa-solid fa-sun"></i>
               <i class="fa-solid fa-moon"></i>
             </div>
