@@ -56,7 +56,7 @@ export default function M_home() {
         </form>
       </main>
 
-      <Footer devName="Abdelouahab" />
+      <Footer devName="Abdelouahab" />   
     </div>
   );
 }
